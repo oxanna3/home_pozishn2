@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <meta charset="utf-8">
+            <title>Cats</title>
+          <!--  <link href="style.css" rel="stylesheet">
+         -->
+          <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300|Cinzel+Decorative:700" rel="stylesheet">
+        <style>
+         body {
+                margin: 0 auto;
+                padding: 0;
+                width:80%;
+                min-width: 800px;
+                font-size: 12px;
+                background-color:darkgray;
+            }
+            .header ,.container{
+                background-color:rgba(0,255,0,0.5);
+                display: flex;
+             }
+            .header {  
+                flex-direction: column;
+            }
+            .container {
+                flex-direction: row;
+                flex-wrap: nowrap;
+                align-items: center;
+            }
+            h1,h2 {
+                font-family: 'Cinzel Decorative', cursive;
+                text-align: center;
+                text-transform: uppercase;
+            }
+            .header h1{
+                flex: 1 50%; 
+                font-size: 5em;
+                text-shadow: 2px 2px 8px rgb(10, 10, 10);
+              
+            }         
+            .header img {
+                flex: 1 50%;
+                display: block;
+               width:100px;
+                padding-left: 60px;
+            }
+            .navigation, .left_article, .right_img {
+                margin: 10px;
+                background-color:rgb(0, 255, 0, 0.5);
+                font-size: 2em;
+            } 
+            .navigation {
+               display: flex;
+                flex:100%;
+                align-items: center;
+            }
+            .navigation ul {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+            }
+            .navigation li {
+                height: 50px;
+                text-transform: uppercase;
+                font-size: 2rem;
+                display: inline-block;
+                padding: 10px;
+                flex:1;
+            }
+            .navigation li > a{
+                text-decoration: none;
+                color: black;
+            }       
+            .navigation li> a:hover{
+                background-color: rgb(0, 184, 11);
+            }
+            .container {
+                display: flex; 
+                flex-direction: column;
+            }
+            h2{
+                font-size: 2rem;
+            }
+        .section {
+        display: flex;
+        flex-direction: row;
+        flex-flow: space-between;
+      }
+       .article_left {
+            padding: 10px;
+        background-color:rgba(0,255,0,0.5);
+        flex: 250px;
+      margin: 10px;
+      margin-left: 0;
+      font-size: 16px; }
+
+      .article_right {
+        padding: 10px;
+        background-color:rgba(0,255,0,0.5);
+        flex: 250px;
+        margin: 10px;
+        margin-right: 0;
+      }
+     
+      .container_tabl {
+            justify-content:center;
+            margin: 5px;
+            padding: 5px;
+                      }
+                    
+      .footer {
+        background-color:rgba(0,255,0,0.5);
+        height:50px;
+        font-size:2em;
+      }
+     .footer a{ 
+         color:blue;
+     }
+            </style>
+    </head>
+    <body> 
+        <div class="header">
+          <h1> Про котів </h1>
+         <img src=images/logo.png alt="logo.png" id="images">
+         <div class="navigation">
+                <ul>
+                    <li> <a href=#>Головна</a></li>
+                    <li> <a href=#>Початок</a></li>
+                    <li> <a href=#>Фотографії</a></li>
+                    <li> <a href=#>Звички</a></li>
+                    <li> <a href=#>Форум</a></li>
+                </ul>
+             </div>
+        </div>
+      
+            <div class="section">
+                <div class="article_left">
+                    <h2>Корисні поради</h2>
+                    <ul>
+            <p>Ці милі і загадкові тварини вже давно заслужили у людей повагу і любов. 
+                Кішки супроводжують людину на землі напевно від самого початку історії 
+                людської цивілізації. Пропонуємо вам підбірку цікавих фактів та корисних порад.</p>
+               
+
+                <li>Чому коти так багато часу проводять, вилизуючи свою шерсть? 
+                    <p>
+                Для котів вилизування, крім засоби гігієни, є способом підтримувати психічну рівновагу. 
+                Догляд за шерстю заспокоює, нейтралізує зароджується агресивність.
+                 Вылизываясь, кіт злизують з вовни певну кількість речовини, що містить вітамін, 
+                 який необхідний для регулювання психічної рівноваги. Якщо позбавити кота цієї можливості, 
+                 він стане нервовим і може навіть загинути.</p></li>
+                <li>Чому кіт іноді намагається облизати ваше обличчя чи волосся? 
+                    <p>Перше враження, 
+                    отримане кошеням від матері - це відхід у вигляді вилизування і вмивання. 
+                    Для нього це акт турботи і догляду, тому якщо кіт (чи кішка) намагається вас облизати, 
+                    сприймайте це як спробу по-материнськи подбати про вас.</p></li>
+              <li>  Чому коти інколи лижуть і кусають вовняний одяг, клубки, шарфики? 
+              <p>Є кілька теорій, але в основному вчені вважають, що причина та ж, 
+                  що і в попередньому питанні.</p></li>
+                    </ul>               
+                </div>
+                <div class="article_right">
+         <h2> Цікаві фотографії</h2>
+         <div class="container_tabl">
+               <div style="display: table;border-color :rgba(0,255,0,0.5);">
+                <div style="display: table-row; border: 10px solid rgba(0,255,0,0.5);">
+                  <div style="display: table-cell;border: 10px solid rgba(0,255,0,0.5);;">
+                   <img src='images\cat1.jpg' alt="cat">
+                  </div>
+                  <div style="display: table-cell;border: 10px solid rgba(0,255,0,0.5);"> 
+                    <img src='images\cat4.jpg' alt="cat"></div>
+                </div>
+                <div style="display: table-row;border: 10px soliddarkgray;">
+                        <div style="display: table-cell;border: 10px solid rgba(0,255,0,0.5);">
+                                <img src='images\cat3.jpg' alt="cat">
+                              </div>
+                        <div style="display: table-cell;border: 10px solid rgba(0,255,0,0.5);"> 
+                            <img src='images\cat4.jpg' alt="cat"></div>
+                      </div>
+              </div>
+            </div>
+        </div>
+        </div>
+       <div class="footer"> Десь тут має бути якийсь текст, а також <a href=#> дізнатися більше про котів...</a></div>
+    </body>
+</html>
