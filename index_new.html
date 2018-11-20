@@ -15,34 +15,35 @@
                 font-size: 12px;
                 background-color:darkgray;
             }
-            .header ,.container{
+            .header{
                 background-color:rgba(0,255,0,0.5);
                 display: flex;
-             }
-            .header {  
                 flex-direction: column;
-            }
-            .container {
+                width:100%
+             }
+            .container_h1_img {
+                display: flex;
                 flex-direction: row;
-                flex-wrap: nowrap;
+
                 align-items: center;
+                
             }
             h1,h2 {
+                width:100%;
                 font-family: 'Cinzel Decorative', cursive;
                 text-align: center;
                 text-transform: uppercase;
             }
-            .header h1{
-                flex: 1 50%; 
+            .container_h1_img h1{
                 font-size: 5em;
                 text-shadow: 2px 2px 8px rgb(10, 10, 10);
               
-            }         
-            .header img {
-                flex: 1 50%;
-                display: block;
+            } 
+            .container_h1_img img {
+               display: block;
                width:100px;
                 padding-left: 60px;
+                flex-grow: 0;
             }
             .navigation, .left_article, .right_img {
                 margin: 10px;
@@ -80,6 +81,7 @@
             .container {
                 display: flex; 
                 flex-direction: column;
+                background-color:rgba(0,255,0,0.5);
             }
             h2{
                 font-size: 2rem;
@@ -96,7 +98,6 @@
       margin: 10px;
       margin-left: 0;
       font-size: 16px; }
-
       .article_right {
         padding: 10px;
         background-color:rgba(0,255,0,0.5);
@@ -123,8 +124,10 @@
     </head>
     <body> 
         <div class="header">
+            <div class="container_h1_img">
           <h1> Про котів </h1>
          <img src=images/logo.png alt="logo.png" id="images">
+            </div>
          <div class="navigation">
                 <ul>
                     <li> <a href=#>Головна</a></li>
@@ -186,4 +189,3 @@
         </div>
        <div class="footer"> Десь тут має бути якийсь текст, а також <a href=#> дізнатися більше про котів...</a></div>
     </body>
-</html>
